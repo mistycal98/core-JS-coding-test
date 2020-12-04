@@ -6,14 +6,18 @@
 
 const addition = (...numbers) => {
   // all your logic
-  let sum = 0;
-  numbers.forEach((number) => {
-    if (typeof number === 'number') {
-      sum = sum + number;
-    } else {
-      throw Error('Invalid Input');
-    }
-  });
+  let sum = 0; 
+  if (numbers.length === 0) {
+    throw Error('Invalid Input');
+  } else {
+    numbers.forEach((number) => {
+      if (typeof number === 'number') {
+        sum = sum + number;
+      } else {
+        throw Error('Invalid Input');
+      }
+    });
+  }
   return sum;
 };
 

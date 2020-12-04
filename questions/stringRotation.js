@@ -4,6 +4,7 @@ const rotateString = (str, n, direction) => {
   //
   // input str = random ,1, right
   // output mrando
+
 };
 
 module.exports = rotateString;
